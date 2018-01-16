@@ -7,6 +7,7 @@ defmodule Mnemonics.ExMachina.Mixfile do
       deps: deps(),
       elixir: "~> 1.5",
       elixirc_paths: elixirc_paths(Mix.env()),
+      package: package(),
       preferred_cli_env: [
         coveralls: :test,
         "coveralls.detail": :test,
@@ -15,7 +16,16 @@ defmodule Mnemonics.ExMachina.Mixfile do
       ],
       start_permanent: Mix.env() == :prod,
       test_coverage: [tool: ExCoveralls],
-      version: "0.1.0"
+      version: "0.1.0",
+
+      # Docs
+      docs: [
+        main: "readme",
+        extras: ["README.md"]
+      ],
+      homepage_url: "https://github.com/ne-sachirou/mnemonics_ex_machina",
+      name: "Mnemonics.ExMachina",
+      source_url: "https://github.com/ne-sachirou/mnemonics_ex_machina"
     ]
   end
 
@@ -32,4 +42,16 @@ defmodule Mnemonics.ExMachina.Mixfile do
 
   defp elixirc_paths(:test), do: ~w(lib test/support)
   defp elixirc_paths(_), do: ~w(lib)
+
+  def package do
+    [
+      files: ["LICENSE", "README.md", "mix.exs", "lib"],
+      licenses: ["GPL-3.0"],
+      links: %{
+        GitHub: "https://github.com/ne-sachirou/mnemonics_ex_machina"
+      },
+      maintainers: ["ne_Sachirou <utakata.c4se@gmail.com>"],
+      name: :mnemonics_ex_machina
+    ]
+  end
 end
