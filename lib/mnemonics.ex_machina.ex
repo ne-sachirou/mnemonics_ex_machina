@@ -4,7 +4,7 @@ defmodule Mnemonics.ExMachina do
 
   defmacro __using__(_opts) do
     quote do
-      {:ok, _} = Application.ensure_all_started :mnemonics
+      {:ok, _} = Application.ensure_all_started(:mnemonics)
       use ExMachina
       use Mnemonics.ExMachina.Strategy
     end

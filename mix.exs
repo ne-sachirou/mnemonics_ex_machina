@@ -6,11 +6,16 @@ defmodule Mnemonics.ExMachina.Mixfile do
       app: :mnemonics_ex_machina,
       deps: deps(),
       elixir: "~> 1.5",
-      elixirc_paths: elixirc_paths(Mix.env),
-      preferred_cli_env: [coveralls: :test, "coveralls.detail": :test, "coveralls.post": :test, "coveralls.html": :test],
-      start_permanent: Mix.env == :prod,
+      elixirc_paths: elixirc_paths(Mix.env()),
+      preferred_cli_env: [
+        coveralls: :test,
+        "coveralls.detail": :test,
+        "coveralls.post": :test,
+        "coveralls.html": :test
+      ],
+      start_permanent: Mix.env() == :prod,
       test_coverage: [tool: ExCoveralls],
-      version: "0.1.0",
+      version: "0.1.0"
     ]
   end
 
@@ -21,7 +26,7 @@ defmodule Mnemonics.ExMachina.Mixfile do
       {:ex_doc, "~> 0.18", only: :dev, runtime: false},
       {:ex_machina, "~> 2.1"},
       {:inner_cotton, github: "ne-sachirou/inner_cotton", only: [:dev, :test]},
-      {:mnemonics, github: "ne-sachirou/mnemonics", only: :test},
+      {:mnemonics, "~> 0.2", only: :test}
     ]
   end
 
