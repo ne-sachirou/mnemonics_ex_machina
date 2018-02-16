@@ -5,6 +5,7 @@ defmodule Mnemonics.ExMachina.Mixfile do
     [
       app: :mnemonics_ex_machina,
       deps: deps(),
+      description: "ExMachina strategy for Mnemonics.",
       elixir: "~> 1.5",
       elixirc_paths: elixirc_paths(Mix.env()),
       package: package(),
