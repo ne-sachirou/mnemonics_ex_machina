@@ -1,4 +1,6 @@
 defmodule Example do
+  @moduledoc false
+
   use Mnemonics, table_name: :examples
 
   defstruct id: 0,

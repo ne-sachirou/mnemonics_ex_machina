@@ -1,4 +1,6 @@
 defmodule Mnemonics.ExMachina.Factory do
+  @moduledoc false
+
   use Mnemonics.ExMachina
 
   def example_factory do

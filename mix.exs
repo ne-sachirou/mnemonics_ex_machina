@@ -35,9 +35,9 @@ defmodule Mnemonics.ExMachina.Mixfile do
   defp deps do
     [
       {:ex_doc, "~> 0.18", only: :dev, runtime: false},
-      {:ex_machina, "~> 2.1"},
+      {:ex_machina, "~> 2.2"},
       {:inner_cotton, github: "ne-sachirou/inner_cotton", only: [:dev, :test]},
-      {:mnemonics, "~> 0.2", only: :test}
+      {:mnemonics, "~> 0.3", only: :test}
     ]
   end
 
