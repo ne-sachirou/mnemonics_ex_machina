@@ -45,7 +45,7 @@ Add `:mnemonics_ex_machina` at `mix.exs` :
 ```elixir
 def deps do
   [
-    {:mnemonics_ex_machina, "~> 0.1"}
+    {:mnemonics_ex_machina, "~> 0.2"}
   ]
 end
 ```

@@ -1,12 +1,18 @@
 defmodule Mnemonics.ExMachina.Mixfile do
   use Mix.Project
 
+  @github "https://github.com/ne-sachirou/mnemonics_ex_machina"
+
   def project do
     [
       app: :mnemonics_ex_machina,
       deps: deps(),
       description: "ExMachina strategy for Mnemonics.",
-      elixir: "~> 1.5",
+      dialyzer: [
+        flags: [:no_undefined_callbacks],
+        remove_defaults: [:unknown]
+      ],
+      elixir: "~> 1.6",
       elixirc_paths: elixirc_paths(Mix.env()),
       package: package(),
       preferred_cli_env: [
@@ -17,16 +23,16 @@ defmodule Mnemonics.ExMachina.Mixfile do
       ],
       start_permanent: Mix.env() == :prod,
       test_coverage: [tool: ExCoveralls],
-      version: "0.1.0",
+      version: "0.2.0",
 
       # Docs
       docs: [
         main: "readme",
         extras: ["README.md"]
       ],
-      homepage_url: "https://github.com/ne-sachirou/mnemonics_ex_machina",
+      homepage_url: @github,
       name: "Mnemonics.ExMachina",
-      source_url: "https://github.com/ne-sachirou/mnemonics_ex_machina"
+      source_url: @github
     ]
   end
 
@@ -47,10 +53,8 @@ defmodule Mnemonics.ExMachina.Mixfile do
   def package do
     [
       files: ["LICENSE", "README.md", "mix.exs", "lib"],
-      licenses: ["GPL-3.0"],
-      links: %{
-        GitHub: "https://github.com/ne-sachirou/mnemonics_ex_machina"
-      },
+      licenses: ["GPL-3.0-or-later"],
+      links: %{GitHub: @github},
       maintainers: ["ne_Sachirou <utakata.c4se@gmail.com>"],
       name: :mnemonics_ex_machina
     ]
