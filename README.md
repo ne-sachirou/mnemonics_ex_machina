@@ -4,6 +4,7 @@ Mnemonics.ExMachina
 
 [![Hex.pm](https://img.shields.io/hexpm/v/mnemonics_ex_machina.svg)](https://hex.pm/packages/mnemonics_ex_machina)
 [![Build Status](https://travis-ci.org/ne-sachirou/mnemonics_ex_machina.svg?branch=master)](https://travis-ci.org/ne-sachirou/mnemonics_ex_machina)
+[![Coverage Status](https://coveralls.io/repos/github/ne-sachirou/mnemonics_ex_machina/badge.svg)](https://coveralls.io/github/ne-sachirou/mnemonics_ex_machina)
 
 Usage
 --
