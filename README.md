@@ -1,13 +1,13 @@
-Mnemonics.ExMachina
-==
-[ExMachina][ExMachina] strategy for [Mnemonics][Mnemonics].
-
-[![Hex.pm](https://img.shields.io/hexpm/v/mnemonics_ex_machina.svg)](https://hex.pm/packages/mnemonics_ex_machina)
-[![Build Status](https://travis-ci.org/ne-sachirou/mnemonics_ex_machina.svg?branch=master)](https://travis-ci.org/ne-sachirou/mnemonics_ex_machina)
+[![Actions Status](https://github.com/ne-sachirou/mnemonics_ex_machina/workflows/test/badge.svg)](https://github.com/ne-sachirou/mnemonics_ex_machina/actions)
 [![Coverage Status](https://coveralls.io/repos/github/ne-sachirou/mnemonics_ex_machina/badge.svg)](https://coveralls.io/github/ne-sachirou/mnemonics_ex_machina)
+[![Hex.pm](https://img.shields.io/hexpm/v/mnemonics_ex_machina.svg)](https://hex.pm/packages/mnemonics_ex_machina)
 
-Usage
---
+# Mnemonics.ExMachina
+
+[ExMachina][exmachina] strategy for [Mnemonics][mnemonics].
+
+## Usage
+
 Just like `ExMachina.Ecto`. Instead of `use ExMachina` or `use ExMachina.Ecto`, we add `use Mnemonics.ExMachina`.
 
 Currently we need an `id` column.
@@ -39,17 +39,17 @@ end
 
 [Document](https://hexdocs.pm/mnemonics_ex_machina).
 
-Installation
---
+## Installation
+
 Add `:mnemonics_ex_machina` at `mix.exs` :
 
 ```elixir
 def deps do
   [
-    {:mnemonics_ex_machina, "~> 0.2"}
+    {:mnemonics_ex_machina, "~> 0.3"}
   ]
 end
 ```
 
-[ExMachina]: https://hex.pm/packages/ex_machina
-[Mnemonics]: https://hex.pm/packages/mnemonics
+[exmachina]: https://hex.pm/packages/ex_machina
+[mnemonics]: https://hex.pm/packages/mnemonics
