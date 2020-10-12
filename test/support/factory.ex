@@ -1,6 +1,8 @@
 defmodule Mnemonics.ExMachina.Factory do
   @moduledoc false
 
+  alias Mnemonics.ExMachina.Example
+
   use Mnemonics.ExMachina
 
   def example_factory do

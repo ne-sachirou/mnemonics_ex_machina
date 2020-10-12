@@ -1,4 +1,6 @@
 defmodule Mnemonics.ExMachinaTest do
+  alias Mnemonics.ExMachina.Example
+
   import Mnemonics.ExMachina.Factory
 
   use ExUnit.Case, async: true

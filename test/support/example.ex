@@ -1,4 +1,4 @@
-defmodule Example do
+defmodule Mnemonics.ExMachina.Example do
   @moduledoc false
 
   use Mnemonics, table_name: :examples
